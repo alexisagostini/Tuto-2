@@ -39,11 +39,6 @@ esearch -db protein    -query "..."
 esearch -db assembly   -query "..."
 ```
 
->  **For phylogenetic trees, use `nucleotide` or `assembly`.**
-> `nucleotide` is simpler. `assembly` gives richer metadata (country, date, host).
-
----
-
 ## 2. Define your biological question
 
 **Before touching the terminal**, answer these three questions:
