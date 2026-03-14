@@ -286,7 +286,7 @@ while read acc; do
   echo "Donloading $acc..."
   esearch -db nucleotide -query "$acc" \
     | efetch -format fasta >> MY_ORGANISM.fasta
-  sleep 1  # be polite with NCBI servers
+  sleep 1  # don't rush it
 done < accession_list.txt
 ```
 
