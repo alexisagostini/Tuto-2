@@ -115,14 +115,14 @@ NOT "partial[Title]"
 
 ```bash
 # Geographic origin
-"France[Country]"
-"Asia[Region]"
+"France[Title]"
+"Asia[Title]"
 
 # Collection date range
 "2020/01/01:2024/12/31[PDAT]"
 
 # Host organism
-"Homo sapiens[Host]"
+"Homo sapiens[Host]" Host work only if it mensionned on the title ( sometime must be ignored or sited with 
 "Gallus gallus[Host]"    # chicken
 "Sus scrofa[Host]"       # pig
 
