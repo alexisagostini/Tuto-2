@@ -122,7 +122,7 @@ NOT "partial[Title]"
 "2020/01/01:2024/12/31[PDAT]"
 
 # Host organism
-"Homo sapiens[Host]" Host work only if it mensionned on the title ( sometime must be ignored or sited with 
+"Homo sapiens[Host]" [Host] works only if it mensionned on the title ( sometime must be ignored or sited with [All feature]
 "Gallus gallus[Host]"    # chicken
 "Sus scrofa[Host]"       # pig
 
