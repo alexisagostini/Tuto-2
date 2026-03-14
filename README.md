@@ -121,15 +121,15 @@ NOT "partial[Title]"
 # Collection date range
 "2020/01/01:2024/12/31[PDAT]"
 
-# Host organism
-"Homo sapiens[Host]" [Host] works only if it mensionned on the title ( sometime must be ignored or sited with [All feature]
+# Host organism   /!\[Host] works only if it mensionned on the title ( sometime must be ignored or sited with [All feature] )
+"Homo sapiens[Host]" 
 "Gallus gallus[Host]"    # chicken
 "Sus scrofa[Host]"       # pig
 
-# Isolation source
-"food[Isolation Source]"
-"blood[Isolation Source]"
-"environment[Isolation Source]"
+# Isolation source [Isolation sources] works only if it mensionned on the title ( sometime must be ignored or sited with **[All feature]** )
+"food[All feature]"
+"blood[All feature]"
+"environment[All feature]"
 ```
 
 ### 3.4 — Combine filters with Boolean operators
@@ -154,7 +154,7 @@ NOT "partial[Title]"
 
 > ⚠️ **Always test your query first** by counting results before downloading:
 > ```bash
-> esearch -db nucleotide -query "YOUR QUERY HERE" | grep "Count"
+> esearch -db nucleotide -query "YOUR QUERY HERE" | grep "Count" 
 > ```
 
 ---
@@ -221,7 +221,7 @@ esearch -db nucleotide \
   > mtb.fasta
 ```
 
-> 💡 **Pro tip:** NCBI returns sequences in arbitrary order by default.
+>  **tip:** NCBI returns sequences in arbitrary order by default.
 > For true random sampling across diversity, use the `assembly` database
 > and filter by `assembly_level` (see Strategy B).
 
