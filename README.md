@@ -665,8 +665,3 @@ raxmlHPC -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 \
 
 # 9. Visualize → open R and run the ggtree script
 ```
-
----
-
-*Pipeline maintained by [your name] — last updated 2026*
-*Tools: NCBI E-utilities, MAFFT, ClipKIT, RAxML, ggtree (R)*
