@@ -248,17 +248,13 @@ You retrieve them **one by one by accession number**.
 ### 5.2 — Find accession numbers programmatically
 
 ```bash
-# Search and print accession numbers only
-esearch -db nucleotide \
-  -query "Salmonella enterica Typhimurium[Organism] complete genome[Title]" \
-  | efetch -format acc
-
 # Save to a file for review
 esearch -db nucleotide \
   -query "Salmonella enterica Typhimurium[Organism] complete genome[Title]" \
   | efetch -format acc > typhimurium_accessions.txt
 
-cat typhimurium_accessions.txt
+cat typhimurium_accessions.txt # Manual indentification of strain known for the creation of accession_list.txt (see 5.5 for exemple)
+
 ```
 
 ### 5.3 — Retrieve a single strain by accession
@@ -283,7 +279,7 @@ cat ACCESSION.fasta >> MY_ORGANISM.fasta
 # ...
 
 while read acc; do
-  echo "Donloading $acc..."
+  echo "Donwloading $acc..."
   esearch -db nucleotide -query "$acc" \
     | efetch -format fasta >> MY_ORGANISM.fasta
   sleep 1  # don't rush it
