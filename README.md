@@ -283,7 +283,7 @@ cat ACCESSION.fasta >> MY_ORGANISM.fasta
 # ...
 
 while read acc; do
-  echo "Downloading $acc..."
+  echo "Donloading $acc..."
   esearch -db nucleotide -query "$acc" \
     | efetch -format fasta >> MY_ORGANISM.fasta
   sleep 1  # be polite with NCBI servers
