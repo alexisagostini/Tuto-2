@@ -18,7 +18,25 @@
 14. [Quick reference — Organisms & recommended strategies](#14-quick-reference--organisms--recommended-strategies)
 
 ---
-
+## 0. pre-require
+Add you API-key
+```Bash
+API-KEY NCBI_API_KEY=855294aa6a5d0abb5c5286c6e93121a14908
+```
+set up micromamba environement 
+```bash
+micromamba create -n micro
+micromamba activate micro
+micromamba install -y -c conda-forge -c bioconda \
+  entrez-direct \
+  mafft \
+  clipkit \
+  raxml \
+  r-base \
+  bioconductor-ggtree \
+  r-ggplot2 \
+  r-ape
+```
 ## 1. Understand NCBI databases
 
 Before searching, you need to know **which NCBI database** to query.
