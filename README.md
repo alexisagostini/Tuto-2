@@ -360,7 +360,7 @@ esearch -db nucleotide -query "AE006468.2" \
 mv background.fasta MY_ORGANISM.fasta
 ```
 
-> ⚠️ **Important for outbreak analysis:**
+> **Important for outbreak analysis:**
 > Make sure your outbreak sequences have **informative headers** in the FASTA file.
 > A good header looks like: `>Sample_ID|Country|Date|Host`
 > This metadata will appear on the tree leaves.
