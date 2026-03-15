@@ -21,7 +21,7 @@
 ## 0. pre-require
 Add you API-key
 ```Bash
-API-KEY NCBI_API_KEY=855294aa6a5d0abb5c5286c6e93121a14908
+export NCBI_API_KEY="YOUR_NCBI_API_KEY"
 ```
 set up micromamba environement 
 ```bash
