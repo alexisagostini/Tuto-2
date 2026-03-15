@@ -2,6 +2,7 @@
 
 ## 📋 Table of Contents
 
+0. [Pre-require](#0-pre-require)
 1. [Understand NCBI databases](#1-understand-ncbi-databases)
 2. [Define your biological question](#2-define-your-biological-question)
 3. [Master NCBI search syntax](#3-master-ncbi-search-syntax)
@@ -18,7 +19,7 @@
 14. [Quick reference — Organisms & recommended strategies](#14-quick-reference--organisms--recommended-strategies)
 
 ---
-## 0. pre-require
+## 0. Pre-require
 Add you API-key
 ```Bash
 export NCBI_API_KEY="YOUR_NCBI_API_KEY"
