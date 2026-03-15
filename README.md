@@ -152,11 +152,15 @@ NOT "partial[Title]"
  NOT plasmid[Title]"
 ```
 
-> ⚠️ **Always test your query first** by counting results before downloading:
+>  **Always test your query first** by counting results before downloading:
 > ```bash
 > esearch -db nucleotide -query "YOUR QUERY HERE" | grep "Count" 
 > ```
-
+> **You can add a random selection of accession** if you add the sufle element before efetch
+> ```bash
+> | shuf --random-source=seed.txt \
+| head -n 100 \
+```
 ---
 
 ## 4. Strategy A — Broad diversity sampling
