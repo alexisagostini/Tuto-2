@@ -423,7 +423,7 @@ esearch -db nucleotide \
   > salmonella_aroC.fasta
 ```
 
-> 💡 **Which strategy for which question?**
+> **Which strategy for which question?**
 >
 > | Question | Strategy | Sequence type |
 > |---|---|---|
