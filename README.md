@@ -159,8 +159,8 @@ NOT "partial[Title]"
 > **You can add a random selection of accession** if you add the sufle element before efetch
 > ```bash
 > | shuf --random-source=seed.txt \
-| head -n 100 \
-```
+>| head -n 100 \
+>```
 ---
 
 ## 4. Strategy A — Broad diversity sampling
