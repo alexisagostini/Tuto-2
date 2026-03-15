@@ -441,7 +441,7 @@ esearch -db nucleotide \
 
 ---
 
-## 8. Retrieve and download sequences
+## 8. Cross-sectional summary
 
 Once your strategy is defined, here is the **complete download workflow**:
 
