@@ -9,7 +9,7 @@
 5. [Strategy B — Targeted strain retrieval](#5-strategy-b--targeted-strain-retrieval)
 6. [Strategy C — Epidemiological outbreak sampling](#6-strategy-c--epidemiological-outbreak-sampling)
 7. [Strategy D — Gene-level phylogeny (16S, ITS, MLST)](#7-strategy-d--gene-level-phylogeny-16s-its-mlst)
-8. [Retrieve and download sequences](#8-retrieve-and-download-sequences)
+8. [cross-sectional summary](#8-retrieve-and-download-sequences)
 9. [Add a root sequence (outgroup)](#9-add-a-root-sequence-outgroup)
 10. [Align sequences with MAFFT](#10-align-sequences-with-mafft)
 11. [Trim the alignment with ClipKIT](#11-trim-the-alignment-with-clipkit)
