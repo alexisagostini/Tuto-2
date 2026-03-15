@@ -524,7 +524,7 @@ mafft --localpair --maxiterate 1000 --thread 8 MY_ORGANISM.fasta \
   > MY_ORGANISM.mafft.fasta
 ```
 
-> ⏱️ **Expected time:**
+> **Expected time:**
 > - 100 bacterial genomes (~4 Mb each): 15–45 minutes
 > - 100 viral genomes (~30 kb each): 1–3 minutes
 > - 100 16S sequences (~1.5 kb each): < 1 minute
@@ -566,7 +566,7 @@ raxmlHPC -f a \
 # RAxML_bipartitions.MY_ORGANISM_TREE
 ```
 
-> 💡 **Model selection:**
+> **Model selection:**
 > - `GTRGAMMA` → standard for DNA sequences (bacteria, viruses)
 > - `PROTGAMMAAUTO` → for protein sequences
 > - `BINCAT` → for SNP-only alignments
@@ -619,40 +619,5 @@ ggsave("phylogenetic_tree.pdf", width = 12, height = 16)
 | Any fungus (ID only) | D | nucleotide | ITS | Distant fungal genus |
 | Any animal (barcoding) | D | nucleotide | COI | Distant animal phylum |
 
----
 
-## ✅ Full pipeline summary
-
-```bash
-# 1. Search and count
-esearch -db nucleotide -query "YOUR_ORGANISM[Organism] AND complete genome[Title]" \
-  | grep "Count"
-
-# 2. Get accession list
-esearch -db nucleotide -query "YOUR_ORGANISM[Organism] AND complete genome[Title]" \
-  | efetch -format acc > accession_list.txt
-
-# 3. Download sequences
-esearch -db nucleotide -query "YOUR_ORGANISM[Organism] AND complete genome[Title]" \
-  | efetch -format fasta -stop 100 > MY_ORGANISM.fasta
-
-# 4. Add reference strains (repeat for each)
-esearch -db nucleotide -query "ACCESSION.VERSION" \
-  | efetch -format fasta >> MY_ORGANISM.fasta
-
-# 5. Add outgroup
-esearch -db nucleotide -query "OUTGROUP_ACCESSION" \
-  | efetch -format fasta >> MY_ORGANISM.fasta
-
-# 6. Align
-mafft --auto --thread 8 MY_ORGANISM.fasta > MY_ORGANISM.mafft.fasta
-
-# 7. Trim
-clipkit MY_ORGANISM.mafft.fasta -o MY_ORGANISM.trimmed.fasta
-
-# 8. Build tree
-raxmlHPC -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 \
-  -s MY_ORGANISM.trimmed.fasta -n MY_ORGANISM_TREE -T 8
-
-# 9. Visualize → open R and run the ggtree script
-```
+> **Created by Alexis Agostini, with assistance from Claude for code corrections and strategic suggestions.**
