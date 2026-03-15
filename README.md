@@ -620,6 +620,6 @@ ggsave("phylogenetic_tree.pdf", width = 12, height = 16)
 | Any animal (barcoding) | D | nucleotide | COI | Distant animal phylum |
 
 
-> All data I used can be found on NCBI with the accession number
-> For any help or other information please contact me at alexis.agostini@unine.ch 
-> **Created by Alexis Agostini, with assistance from Claude for code corrections and strategic suggestions.**
+> # All data I used can be found on NCBI with the accession number
+> # For any help or other information please contact me at alexis.agostini@unine.ch 
+> # **Created by Alexis Agostini, with assistance from Claude for code corrections and strategic suggestions.**
