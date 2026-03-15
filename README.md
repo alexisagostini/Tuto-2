@@ -340,7 +340,7 @@ in a broader phylogenetic context. You combine:
 esearch -db nucleotide \
   -query "Salmonella enterica[Organism] \
           AND complete genome[Title] \
-          AND France[Country] \
+          AND Germany[Title] \
           AND 2022/01/01:2023/12/31[PDAT]" \
   | efetch -format fasta -stop 50 \
   > background.fasta
