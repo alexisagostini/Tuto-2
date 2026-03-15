@@ -466,15 +466,6 @@ grep ">" MY_ORGANISM.fasta | wc -l       # count sequences
 grep ">" MY_ORGANISM.fasta | head -10    # preview headers
 ```
 
-> ⚠️ **NCBI rate limits:**
-> - Without API key: max 3 requests/second
-> - With API key: max 10 requests/second
->
-> ```bash
-> # Set your API key (get it free at ncbi.nlm.nih.gov/account)
-> export NCBI_API_KEY=your_key_here
-> ```
-
 ---
 
 ## 9. Add a root sequence (outgroup)
@@ -508,7 +499,7 @@ esearch -db nucleotide -query "CP000480.1" \
 cat outgroup.fasta >> MY_ORGANISM.fasta
 ```
 
-> 💡 **How to choose an outgroup:**
+> **How to choose an outgroup:**
 > - It must be in the **same family or order** as your organism
 > - It must be **clearly outside** your ingroup
 > - It should have a **complete, high-quality genome**
