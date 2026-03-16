@@ -371,7 +371,7 @@ mv background.fasta MY_ORGANISM.fasta
 ```
 optional: if you want to add a label while you are downloading fasta you can add that line 
 ```bash
- | \ awk '/^>/ {print ">" "food_" substr($0, 2); next} 1' > salmonella_food.fasta
+ | \ awk '/^>/ {print ">" "label_" substr($0, 2); next} 1' > salmonella_food.fasta
 ```
 > **Important for outbreak analysis:**
 > Make sure your outbreak sequences have **informative headers** in the FASTA file.
