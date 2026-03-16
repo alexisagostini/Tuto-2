@@ -369,7 +369,12 @@ esearch -db nucleotide -query "AE006468.2" \
 # Step 4 — Rename your file
 mv background.fasta MY_ORGANISM.fasta
 ```
-
+optional: if you want to add a label while you are downloading fasta you can add that line 
+```bash
+esearch -db nucleotide -query "Salmonella enterica Typhimurium[Organism] AND complete genome[Title] AND food[All feature] NOT plasmid[Title]" | \
+efetch -format fasta | \
+awk '/^>/ {print ">" "food_" substr($0, 2); next} 1' > salmonella_food.fasta
+```
 > **Important for outbreak analysis:**
 > Make sure your outbreak sequences have **informative headers** in the FASTA file.
 > A good header looks like: `>Sample_ID|Country|Date|Host`
