@@ -524,13 +524,13 @@ MAFFT lines them up **column by column** so homologous positions are compared.
 
 ```bash
 # Standard alignment — good for most cases
-mafft --auto --thread 8 MY_ORGANISM.fasta > MY_ORGANISM.mafft.fasta
+mafft --auto MY_ORGANISM.fasta > MY_ORGANISM.mafft.fasta
 
 # For large whole genomes (>100 sequences, >1 Mb each) — faster
-mafft --retree 1 --thread 16 MY_ORGANISM.fasta > MY_ORGANISM.mafft.fasta
+mafft --retree 1 MY_ORGANISM.fasta > MY_ORGANISM.mafft.fasta
 
 # For highly divergent sequences — more accurate
-mafft --localpair --maxiterate 1000 --thread 8 MY_ORGANISM.fasta \
+mafft --localpair --maxiterate 1000 MY_ORGANISM.fasta \
   > MY_ORGANISM.mafft.fasta
 ```
 
