@@ -20,6 +20,12 @@
 
 ---
 ## 0. Pre-require
+Find your AI-KEY
+On your account setting in ncbi-website you will find your API KEY
+if you don't have acount you can use mine
+```markdown
+
+
 Add you API-key
 ```Bash
 export NCBI_API_KEY="YOUR_NCBI_API_KEY"
