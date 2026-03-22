@@ -34,7 +34,20 @@ Add you API-key
 export NCBI_API_KEY="YOUR_NCBI_API_KEY"
 ```
 set up micromamba environement 
+
 ```bash
+# download and launch the setup
+"${SHELL}" <(curl -L https://micro.mamba.pm/install.sh)
+# you need to "answer" any question by pressing "ENTER"
+
+# make sure that the configuration is loaded
+source ~/.bashrc
+
+micromamba create -n conda-env
+  micromamba activate conda-env
+```
+
+
 micromamba create -n micro
 micromamba activate micro
 micromamba install -y -c conda-forge -c bioconda \
